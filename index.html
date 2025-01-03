@@ -1,43 +1,127 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ma Page Web</title>
-    <!-- Vous pouvez ajouter des liens vers des feuilles de style ici -->
-    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <title>Portfolio de Clara Dumont</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #222;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        nav {
+            margin-top: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.1rem;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            max-width: 1100px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #222;
+            margin-bottom: 10px;
+        }
+        .project {
+            margin-bottom: 20px;
+        }
+        .project h3 {
+            color: #444;
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background: #222;
+            color: white;
+            margin-top: 20px;
+        }
+        .hidden-link {
+            display: none;
+        }
+    </style>
 </head>
 <body>
-
     <header>
-        <h1>Titre de ma page</h1>
-        <p>Sous-titre ou description</p>
+        <h1>Clara Dumont</h1>
+        <p>Intelligence artificielle et science des données</p>
+        <nav>
+            <a href="#about">À propos</a>
+            <a href="#projects">Projets</a>
+            <a href="#blog">Blog</a>
+            <a href="#contact">Contact</a>
+        </nav>
     </header>
 
-    <nav>
-        <!-- Vous pouvez ajouter un menu de navigation ici -->
-        <!-- <ul>
-            <li><a href="#">Accueil</a></li>
-            <li><a href="#">À propos</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul> -->
-    </nav>
+    <div class="container" id="about">
+        <h2>À propos</h2>
+        <p>Je suis Clara Dumont, une scientifique passionnée par l'intelligence artificielle et son impact sur l'humanité. Ce portfolio retrace mes travaux, mes publications, et des réflexions personnelles.</p>
+        <blockquote>"Nous sommes tous des fragments en quête d'un puzzle plus grand."</blockquote>
+    </div>
 
-    <main>
-        <section>
-            <h2>Section 1</h2>
-            <p>Contenu de la section 1</p>
-        </section>
+    <div class="container" id="projects">
+        <h2>Projets</h2>
+        <div class="project">
+            <h3>Projet ARA</h3>
+            <p>Un projet d'intelligence artificielle explorant les émotions humaines. <a href="hidden-page.html" class="hidden-link">Lien caché</a></p>
+        </div>
+        <div class="project">
+            <h3>Exploration des émotions humaines</h3>
+            <p>Analyse des sentiments à travers des algorithmes innovants. Contient des insights surprenants sur nos comportements.</p>
+        </div>
+        <div class="project">
+            <h3>Projet abandonné</h3>
+            <p>Un projet mystérieux laissé en suspens, laissant place à des spéculations...</p>
+        </div>
+    </div>
 
-        <section>
-            <h2>Section 2</h2>
-            <p>Contenu de la section 2</p>
-        </section>
-    </main>
+    <div class="container" id="blog">
+        <h2>Blog</h2>
+        <article>
+            <h3>Pourquoi l'IA doit être éthique</h3>
+            <p>Réflexions sur l'importance de l'éthique dans les projets d'intelligence artificielle.</p>
+        </article>
+        <article>
+            <h3>Quand le travail devient une obsession</h3>
+            <p>Un article personnel sur l'équilibre entre la passion et la vie personnelle.</p>
+        </article>
+    </div>
+
+    <div class="container" id="contact">
+        <h2>Contact</h2>
+        <p>Pour toute question ou collaboration, n'hésitez pas à me contacter.</p>
+        <ul>
+            <li>Email : <a href="mailto:clara.dumont@example.com">clara.dumont@example.com</a></li>
+            <li>Téléphone : <a href="tel:+330123456789">+33 01 23 45 67 89</a></li>
+        </ul>
+    </div>
 
     <footer>
-        <p>Pied de page - © 2023 Ma Page Web</p>
+        <p>&copy; 2025 Clara Dumont. Tous droits réservés.</p>
     </footer>
-
 </body>
 </html>
