@@ -1,127 +1,161 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio de Clara Dumont</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Roboto', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-        header {
-            background-color: #222;
-            color: white;
-            padding: 20px 0;
-            text-align: center;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 2.5rem;
-        }
-        nav {
-            margin-top: 10px;
-        }
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 15px;
-            font-size: 1.1rem;
-        }
-        nav a:hover {
-            text-decoration: underline;
-        }
-        .container {
-            max-width: 1100px;
-            margin: 20px auto;
-            padding: 20px;
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-        h2 {
-            color: #222;
-            margin-bottom: 10px;
-        }
-        .project {
-            margin-bottom: 20px;
-        }
-        .project h3 {
-            color: #444;
-        }
-        footer {
-            text-align: center;
-            padding: 10px 0;
-            background: #222;
-            color: white;
-            margin-top: 20px;
-        }
-        .hidden-link {
-            display: none;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio de Clara Dumont</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #1e1e2f;
+      color: #fff;
+    }
+
+    header {
+      text-align: center;
+      padding: 20px;
+      background-color: #2a2a40;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    header p {
+      margin: 5px 0 20px;
+      font-size: 1.2rem;
+      color: #ccc;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .section {
+      padding: 40px 0;
+      border-bottom: 1px solid #444;
+    }
+
+    .section h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .section p {
+      font-size: 1rem;
+      line-height: 1.6;
+      color: #ddd;
+    }
+
+    .image-container {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    .image-container img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #2a2a40;
+      color: #ccc;
+    }
+
+    a {
+      color: #61dafb;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Clara Dumont</h1>
-        <p>Intelligence artificielle et science des données</p>
-        <nav>
-            <a href="#about">À propos</a>
-            <a href="#projects">Projets</a>
-            <a href="#blog">Blog</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
+  <header>
+    <h1>Clara Dumont</h1>
+    <p>Intelligence artificielle et science des données</p>
+  </header>
 
-    <div class="container" id="about">
-        <h2>À propos</h2>
-        <p>Je suis Clara Dumont, une scientifique passionnée par l'intelligence artificielle et son impact sur l'humanité. Ce portfolio retrace mes travaux, mes publications, et des réflexions personnelles.</p>
-        <blockquote>"Nous sommes tous des fragments en quête d'un puzzle plus grand."</blockquote>
-    </div>
+  <div class="container">
+    <!-- Section d'accueil -->
+    <section class="section">
+      <h2>Bienvenue</h2>
+      <div class="image-container">
+        <!-- Exemple d'image -->
+        <img src="https://via.placeholder.com/800x400" alt="Photo de Clara dans son laboratoire">
+      </div>
+      <p>
+        Je suis Clara Dumont, une scientifique passionnée par l'intelligence artificielle. Découvrez mes travaux,
+        publications, et projets personnels à travers ce portfolio.
+      </p>
+    </section>
 
-    <div class="container" id="projects">
-        <h2>Projets</h2>
-        <div class="project">
-            <h3>Projet ARA</h3>
-            <p>Un projet d'intelligence artificielle explorant les émotions humaines. <a href="hidden-page.html" class="hidden-link">Lien caché</a></p>
-        </div>
-        <div class="project">
-            <h3>Exploration des émotions humaines</h3>
-            <p>Analyse des sentiments à travers des algorithmes innovants. Contient des insights surprenants sur nos comportements.</p>
-        </div>
-        <div class="project">
-            <h3>Projet abandonné</h3>
-            <p>Un projet mystérieux laissé en suspens, laissant place à des spéculations...</p>
-        </div>
-    </div>
+    <!-- Section À propos -->
+    <section class="section">
+      <h2>À propos</h2>
+      <p>
+        Clara était une chercheuse innovante dans le domaine de l'intelligence artificielle. Elle adorait explorer
+        comment la technologie peut influencer nos émotions et améliorer nos vies. Ses travaux incluent des projets
+        ambitieux comme "ARA", un système de reconnaissance émotionnelle avancé.
+      </p>
+      <div class="image-container">
+        <!-- Exemple d'image -->
+        <img src="https://via.placeholder.com/600x300" alt="Portrait de Clara">
+      </div>
+    </section>
 
-    <div class="container" id="blog">
-        <h2>Blog</h2>
-        <article>
-            <h3>Pourquoi l'IA doit être éthique</h3>
-            <p>Réflexions sur l'importance de l'éthique dans les projets d'intelligence artificielle.</p>
-        </article>
-        <article>
-            <h3>Quand le travail devient une obsession</h3>
-            <p>Un article personnel sur l'équilibre entre la passion et la vie personnelle.</p>
-        </article>
-    </div>
-
-    <div class="container" id="contact">
-        <h2>Contact</h2>
-        <p>Pour toute question ou collaboration, n'hésitez pas à me contacter.</p>
+    <!-- Section Projets -->
+    <section class="section">
+      <h2>Projets</h2>
+      <p>
+        Clara a travaillé sur plusieurs projets fascinants, dont :
         <ul>
-            <li>Email : <a href="mailto:clara.dumont@example.com">clara.dumont@example.com</a></li>
-            <li>Téléphone : <a href="tel:+330123456789">+33 01 23 45 67 89</a></li>
+          <li><strong>Projet ARA :</strong> Une intelligence artificielle capable de comprendre les émotions humaines.</li>
+          <li><strong>Exploration émotionnelle :</strong> Une étude des interactions entre humains et machines.</li>
         </ul>
-    </div>
+      </p>
+      <p>
+        <a href="/projet-ara/indice1">Cliquez ici pour explorer un projet caché</a>.
+      </p>
+    </section>
 
-    <footer>
-        <p>&copy; 2025 Clara Dumont. Tous droits réservés.</p>
-    </footer>
+    <!-- Section Blog -->
+    <section class="section">
+      <h2>Blog</h2>
+      <p>
+        Découvrez les réflexions de Clara sur l'intelligence artificielle et ses impacts sociétaux à travers ses articles
+        :
+        <ul>
+          <li><a href="#">Pourquoi l'IA doit être éthique</a></li>
+          <li><a href="#">Quand le travail devient une obsession</a></li>
+          <li><a href="#">Les relations dans un monde hyperconnecté</a></li>
+        </ul>
+      </p>
+    </section>
+
+    <!-- Section Contact -->
+    <section class="section">
+      <h2>Contact</h2>
+      <p>
+        Vous souhaitez en savoir plus ? Contactez-moi par email à <a href="mailto:clara.dumont@example.com">clara.dumont@example.com</a>.
+      </p>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Clara Dumont - Tous droits réservés.</p>
+  </footer>
 </body>
 </html>
