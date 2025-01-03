@@ -1,1 +1,223 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio de Clara Dumont</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4faff; /* Fond clair bleu pastel */
+      color: #1a1a2e; /* Texte foncé */
+    }
 
+    header {
+      text-align: center;
+      padding: 20px;
+      background-color: #27496d; /* Bleu foncé */
+      color: #fff;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    header p {
+      margin: 5px 0 20px;
+      font-size: 1.2rem;
+      color: #dfe6e9; /* Texte clair */
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .section {
+      padding: 40px 0;
+      border-bottom: 1px solid #c0d6e4; /* Lignes bleutées */
+    }
+
+    .section h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      text-align: center;
+      color: #27496d; /* Bleu foncé */
+    }
+
+    .section p {
+      font-size: 1rem;
+      line-height: 1.6;
+      color: #1a1a2e; /* Texte foncé */
+    }
+
+    .image-container {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    .image-container img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(39, 73, 109, 0.5); /* Ombre bleu foncé */
+      cursor: pointer; /* Indiquer que l'image est cliquable */
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #27496d; /* Bleu foncé */
+      color: #dfe6e9; /* Texte clair */
+    }
+
+    a {
+      color: #1b98e0; /* Bleu vif */
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+      color: #004e89; /* Bleu encore plus foncé */
+    }
+
+    /* Style pour la fenêtre modale */
+    .modal {
+      display: none; /* Cacher la fenêtre par défaut */
+      position: fixed;
+      z-index: 1;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5); /* Fond semi-transparent */
+    }
+
+    .modal-content {
+      background-color: #fff;
+      margin: 15% auto;
+      padding: 20px;
+      border-radius: 8px;
+      width: 300px;
+      text-align: center;
+    }
+
+    .modal input {
+      padding: 10px;
+      margin: 10px 0;
+      width: 100%;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    .modal button {
+      padding: 10px;
+      background-color: #27496d;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .modal button:hover {
+      background-color: #1a3b4e;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Clara Dumont</h1>
+    <p>Intelligence artificielle et science des données</p>
+  </header>
+
+  <div class="container">
+    <!-- Section d'accueil -->
+    <section class="section">
+      <h2>Bienvenue</h2>
+      <div class="image-container">
+        <img src="image.jpg" alt="Photo de Clara dans son laboratoire" id="image-to-click">
+      </div>
+      <p>
+        Je suis Clara Dumont, une scientifique passionnée par l'intelligence artificielle. Découvrez mes travaux,
+        publications, et projets personnels à travers ce portfolio.
+      </p>
+    </section>
+    <!-- Section Projets -->
+    <section class="section">
+      <h2>Projets</h2>
+      <p>
+        J'ai travaillé sur plusieurs projets fascinants, dont :
+        <ul>
+          <li><strong>Projet ARA :</strong> Une intelligence artificielle capable de comprendre les émotions humaines.</li>
+          <li><strong>Exploration émotionnelle :</strong> Une étude des interactions entre humains et machines.</li>
+        </ul>
+      </p>
+    </section>
+
+    <!-- Section Blog -->
+    <section class="section">
+      <h2>Blog</h2>
+      <p>
+        Retrouvez ici les articles sur lesquels je travaille en ce moment :
+        <ul>
+          <li><a href="article1.html">Pourquoi l'IA doit être éthique</a></li>
+          <li><a href="article2.html">Les relations dans un monde hyperconnecté</a></li>
+        </ul>
+      </p>
+    </section>
+
+    <!-- Section Contact -->
+    <section class="section">
+      <h2>Contact</h2>
+      <p>
+        Vous souhaitez en savoir plus ? Contactez-moi par email à <a href="mailto:clara.dumont@gmail.com">claraa.dmt@gmail.com</a>.
+      </p>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Clara Dumont - Tous droits réservés.</p>
+  </footer>
+
+  <!-- Fenêtre modale pour le mot de passe -->
+  <div id="passwordModal" class="modal">
+    <div class="modal-content">
+      <h2>Entrez le mot de passe</h2>
+      <input type="password" id="password" placeholder="Mot de passe">
+      <button onclick="checkPassword()">Valider</button>
+    </div>
+  </div>
+
+  <script>
+    // Fonction pour afficher la fenêtre modale
+    document.getElementById('image-to-click').addEventListener('click', function() {
+      document.getElementById('passwordModal').style.display = 'block';
+    });
+
+    // Vérification du mot de passe
+    function checkPassword() {
+      var password = document.getElementById('password').value;
+      var correctPassword = 'secret123'; // Mot de passe à vérifier
+
+      if (password === correctPassword) {
+        // Si le mot de passe est correct, redirige vers un lien
+        window.location.href = 'admin.html'; // Remplacez ce lien par celui que vous souhaitez
+      } else {
+        alert('Mot de passe incorrect. Essayez à nouveau.');
+      }
+    }
+
+    // Fermer la fenêtre modale si l'utilisateur clique en dehors de la fenêtre
+    window.onclick = function(event) {
+      var modal = document.getElementById('passwordModal');
+      if (event.target === modal) {
+        modal.style.display = 'none';
+      }
+    };
+  </script>
+</body>
+</html>
