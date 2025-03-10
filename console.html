@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Console Web</title>
+    <style>
+        body {
+            background-color: black;
+            color: lime;
+            font-family: monospace;
+            padding: 20px;
+        }
+        #console {
+            width: 100%;
+            height: 80vh;
+            overflow-y: auto;
+            border: 1px solid lime;
+            padding: 10px;
+        }
+        #input {
+            width: 100%;
+            background: black;
+            color: lime;
+            border: none;
+            font-family: monospace;
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="console"></div>
+    <input type="text" id="input" autofocus>
+    
+    <script>
+        const consoleDiv = document.getElementById("console");
+        const input = document.getElementById("input");
+        
+        function printToConsole(text) {
+            consoleDiv.innerHTML += `<div>> ${text}</div>`;
+            consoleDiv.scrollTop = consoleDiv.scrollHeight;
+        }
+        
+        input.addEventListener("keypress", function(event) {
+            if (event.key === "Enter") {
+                const command = input.value.trim();
+                input.value = "";
+                printToConsole(command);
+                handleCommand(command);
+            }
+        });
+        
+        function handleCommand(command) {
+            switch (command) {
+                case "1":
+                    printToConsole("Vous avez tapé 1. Voici le texte personnalisé !");
+                    break;
+                case "help":
+                    printToConsole("Commandes disponibles :\n1 - Afficher un texte\nhelp - Liste des commandes\nclear - Effacer l'écran");
+                    break;
+                case "clear":
+                    consoleDiv.innerHTML = "";
+                    break;
+                default:
+                    printToConsole("Commande inconnue. Tapez 'help' pour voir la liste des commandes.");
+            }
+        }
+    </script>
+</body>
+</html>
