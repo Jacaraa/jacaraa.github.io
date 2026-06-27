@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Point & Click</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div id="game">
+
+    <!-- Image de fond -->
+    <div id="scene">
+
+        <!-- Les zones cliquables seront générées en JS -->
+        <div id="hotspots"></div>
+
+    </div>
+
+    <!-- Boîte de dialogue -->
+    <div id="dialogue">
+        <p id="text"></p>
+    </div>
+
+</div>
+
+<script src="game.js"></script>
+
+</body>
+</html>
