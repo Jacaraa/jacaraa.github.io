@@ -58,7 +58,7 @@ const scenes = {
 
                 action:"scene",
 
-                target:"jardin"
+                target:"pito"
 
             },
 
@@ -78,14 +78,34 @@ const scenes = {
 
     },
 
-    couloir:{
+    pito:{
 
-        image:"pâtes_blanches.png",
+        image:"pito_baraque.png",
 
         dialogue:[
 
-            "Tu arrives dans le couloir.",
-            "Le silence est pesant..."
+            "Nika arrive enfin chez Pito pour aller en boîte",
+            "Nika : Wesh pit-pit ça va ou quoi ?",
+            "Pito : Arrête de m'appeler comme ça stp c'est cringe...",
+            "Nika : Pito pas content...",
+            "Pito : azy ftg slp, kestufoula ?",
+            "Nika : Bah je me suis barré de chez mon kassos de daron, ça te dit d'aller en teboi avec timtim et temtem ?",
+            "Pito : Ah ouais mais t'es un bandit meuuuuuf tu slayyyy !",
+            "Pito : azy je suis chaude mais tu veux vraiment y aller avec les 2 gros pd ?",
+            "Nika : mais oui tkt ça va être goleri",
+            "Nika : on va peut-être pécho inshallah",
+            "Pito : Bismillah heureusement qu'on est stérilisée, flemme d'avoir des gosses.",
+            "Nika : Mais c'est parce que t'as pas goûté aussi",
+            "Pito : De ?",
+            "Nika : Nan rien tkt.",
+            "Pito : Eh vas'y t'es trop une galère toi, je me prep et go go go.",
+            "Nika : Dans le bueno tout ça.",
+            "Pito : Binks",
+            "Nika : Binks",
+
+            action:"scene",
+
+            target:"chambre"
 
         ],
 
