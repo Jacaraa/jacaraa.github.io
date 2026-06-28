@@ -7,7 +7,7 @@ const scenes = {
         dialogue:[
             "Nika, complétement en pétard décida d'aller à la Fabrik pour faire sa pussycat (même si s'en est pas une)",
             "Elle va rassembler tout ses shabs pour aller en boîte",
-            "Que va-t-elle faire en premier lieu ?"
+            "Mais il faut d'abord qu'elle s'enfuit !"
         ],
 
         hotspots:[
