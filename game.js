@@ -2,7 +2,7 @@ const scenes = {
 
     chambre:{
 
-        image:"images/chambre.jpg",
+        image:"pates_blanches.png",
 
         dialogue:[
             "Tu te réveilles dans une étrange chambre.",
