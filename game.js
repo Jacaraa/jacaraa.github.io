@@ -13,8 +13,8 @@ const scenes = {
         hotspots:[
 
             {
-                x:700,
-                y:500,
+                x:50,
+                y:53.3,
                 width:200,
                 height:200,
 
@@ -25,8 +25,8 @@ const scenes = {
             },
 
             {
-                x:665,
-                y:373,
+                x:48.7,
+                y:41,
                 width:20,
                 height:20,
 
