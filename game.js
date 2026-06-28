@@ -56,7 +56,7 @@ const scenes = {
 
     couloir:{
 
-        image:"gateau.jpg",
+        image:"8_cats.jpg",
 
         dialogue:[
 
