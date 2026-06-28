@@ -60,6 +60,18 @@ const scenes = {
 
                 target:"jardin"
 
+            },
+
+            {
+                x:65,
+                y:83,
+                width:100,
+                height:50,
+
+                action:"text",
+
+                text:"Chauffage à bain d'huile à vendre, état quasi neuf, très peu servi"
+
             }
 
         ]
