@@ -187,8 +187,8 @@ function loadScene(name){
 
         div.className="hotspot";
 
-        div.style.left=h.x+"px";
-        div.style.top=h.y+"px";
+        div.style.left=h.x+"%";
+        div.style.top=h.y+"%";
 
         div.style.width=h.width+"px";
         div.style.height=h.height+"px";
