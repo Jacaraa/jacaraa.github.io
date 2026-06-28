@@ -38,10 +38,10 @@ const scenes = {
 
             {
 
-                x:200,
-                y:400,
+                x:15,
+                y:40,
                 width:290,
-                height:180,
+                height:250,
 
                 action:"text",
 
@@ -51,8 +51,8 @@ const scenes = {
 
             {
 
-                x:520,
-                y:140,
+                x:38,
+                y:14,
                 width:80,
                 height:280,
 
