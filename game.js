@@ -5,7 +5,7 @@ const scenes = {
         image:"chambre.jpg",
 
         dialogue:[
-            "Nika, complétement en pétard décida d'aller à la Fabrik pour faire sa pussycat (même si s'en est pas une)",
+            "Nika, complétement en pétard décida d'aller à la Fabrik pour faire sa pussycat (même si s'en est pas une) [cliquer pour passer au dialogue suivant]",
             "Elle va rassembler tout ses shabs pour aller en boîte",
             "Mais il faut d'abord qu'elle s'enfuit !"
         ],
@@ -13,40 +13,52 @@ const scenes = {
         hotspots:[
 
             {
-                x:70,
-                y:40,
-                width:100,
+                x:700,
+                y:500,
+                width:200,
                 height:200,
+
+                action:"text",
+
+                text:"Jamais éteint depuis 1 an"
+
+            },
+
+            {
+                x:665,
+                y:373,
+                width:20,
+                height:20,
+
+                action:"text",
+
+                text:"Le fruit de Nika ! :D"
+
+            },
+
+            {
+
+                x:200,
+                y:400,
+                width:290,
+                height:180,
+
+                action:"text",
+
+                text:"Un setup tah les fous pour faire des big pentakill (actuellement 2 à mon actif en aram depuis 10 ans de jeu)"
+
+            },
+
+            {
+
+                x:520,
+                y:140,
+                width:80,
+                height:280,
 
                 action:"scene",
 
-                target:"couloir"
-
-            },
-
-            {
-
-                x:320,
-                y:260,
-                width:90,
-                height:60,
-
-                action:"text",
-
-                text:"Une vieille photo... derrière elle il n'y a rien."
-
-            },
-
-            {
-
-                x:540,
-                y:180,
-                width:80,
-                height:120,
-
-                action:"text",
-
-                text:"Le tiroir est vide."
+                target:"jardin"
 
             }
 
