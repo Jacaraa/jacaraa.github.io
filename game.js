@@ -101,7 +101,7 @@ const scenes = {
             "Pito : Eh vas'y t'es trop une galère toi, je me prep et go go go.",
             "Nika : Dans le bueno tout ça.",
             "Pito : Binks",
-            "Nika : Binks",
+            "Nika : Binks"
 
         ],
 
