@@ -5,9 +5,9 @@ const scenes = {
         image:"chambre.jpg",
 
         dialogue:[
-            "Tu te réveilles dans une étrange chambre.",
-            "La porte semble fermée.",
-            "Il doit y avoir un moyen de sortir..."
+            "Nika, complétement en pétard décida d'aller à la Fabrik pour faire sa pussycat (même si s'en est pas une)",
+            "Elle va rassembler tout ses shabs pour aller en boîte",
+            "Que va-t-elle faire en premier lieu ?"
         ],
 
         hotspots:[
