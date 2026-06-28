@@ -103,10 +103,6 @@ const scenes = {
             "Pito : Binks",
             "Nika : Binks",
 
-            action:"scene",
-
-            target:"chambre"
-
         ],
 
         hotspots:[
