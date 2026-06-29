@@ -129,6 +129,56 @@ const scenes = {
 
                 action:"scene",
                 target:"pito"
+            },
+            
+            {
+                x:30,
+                y:60,
+                width:300,
+                height:280,
+
+                action:"text",
+                text:"Jardin de merde avec son herbe de merde qui repousse super vite"
+            },
+            
+            {
+                x:70,
+                y:65,
+                width:300,
+                height:260,
+
+                action:"text",
+                text:"Chaise de jardin empêchant le nyanya d'aller chez le voisin (technique à revoir)"
+            },
+
+            {
+                x:85,
+                y:40,
+                width:100,
+                height:100,
+
+                action:"text",
+                text:"Nika : Ptn j'adore aller chez le voisin pour respirer le pot d'échappement de sa moto qu'il n'a jamais utilisé !"
+            },
+
+            {
+                x:45,
+                y:45,
+                width:100,
+                height:40,
+
+                action:"text",
+                text:"Plantes offertes par Microbe envahient par les mauvaises herbes, toujours en vie le 29 juin 2026..."
+            },
+
+            {
+                x:27.5,
+                y:40,
+                width:140,
+                height:40,
+
+                action:"text",
+                text:"Lumières d'ambiance pour le prochain Akuma barbecue, servi 3 jours."
             }
 
         ]
