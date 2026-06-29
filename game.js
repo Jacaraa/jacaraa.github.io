@@ -102,11 +102,8 @@ const scenes = {
             "Nika : Dans le bueno tout ça.",
             "Pito : Binks",
             "Nika : Binks"
-
         ],
-
-        action:"scene",
-        target:"alim"
+        nextScene:"bk",
 
     },
 
@@ -228,15 +225,25 @@ const hotspotContainer = document.getElementById("hotspots");
 
 loadScene("chambre");
 
-dialogue.onclick = ()=>{
+dialogue.onclick = () => {
 
     dialogueIndex++;
 
     const d = scenes[currentScene].dialogue;
 
-    if(dialogueIndex<d.length){
+    if (dialogueIndex < d.length) {
 
-        text.innerText=d[dialogueIndex];
+        text.innerText = d[dialogueIndex];
+
+    } else {
+
+        // Fin du dialogue
+
+        if (scenes[currentScene].nextScene) {
+
+            loadScene(scenes[currentScene].nextScene);
+
+        }
 
     }
 
