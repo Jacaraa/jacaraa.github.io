@@ -105,22 +105,8 @@ const scenes = {
 
         ],
 
-        hotspots:[
-
-            {
-
-                x:600,
-                y:200,
-                width:140,
-                height:260,
-
-                action:"scene",
-
-                target:"fin"
-
-            }
-
-        ]
+        action:"scene",
+        target:"fin"
 
     },
 
@@ -135,6 +121,15 @@ const scenes = {
         ],
 
         hotspots:[
+            {
+                x:65,
+                y:35,
+                width:40,
+                height:60,
+
+                action:"scene",
+                target:"pito"
+            }
 
         ]
 
