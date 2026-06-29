@@ -106,8 +106,39 @@ const scenes = {
         ],
 
         action:"scene",
-        target:"fin"
+        target:"alim"
 
+    },
+
+    alim:{
+
+        image:"alim.jpg",
+
+        dialogue:[
+            "Nika : Azy c'est bon on est arrivé à l'alim, go prendre de la vovo",
+            "Pito : Azy je vais prendre full redbull",
+            "Teemo : Y'a moyen d'aller voir le dealer après les filles ?",
+            "Nika : Wesh nan mais nous on prend pas nous",
+            "Pito : Mais ouais t'as cru qu'on était des toxicos ?",
+            "Themis : DUUUUUUUH",
+            "Nika : Regarde ton frère, il est devenu giga autiste à cause de toi",
+            "Teemo : Nan il est né comme ça je t'ai dis azy il me cringe trop lui ltb",
+            "Pito : Bon en vrai, vous voulez pas aller en boîte là ? flemme de payer l'entrée en sah",
+            "Teemo : Ouais stv dlb"
+        ],
+
+        hotspots:[
+            {
+                x:50,
+                y:50,
+                width:50,
+                height:50,
+
+                action:"scene",
+                target:"fabrik"
+            }
+        ]
+        
     },
 
     jardin:{
@@ -178,7 +209,7 @@ const scenes = {
                 height:40,
 
                 action:"text",
-                text:"Lumières d'ambiance pour le prochain Akuma barbecue, servi 3 jours."
+                text:"Lumières d'ambiance pour le prochain Akuma barbecue (servi 3 fois)."
             }
 
         ]
