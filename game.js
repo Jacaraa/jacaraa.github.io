@@ -122,10 +122,10 @@ const scenes = {
 
         hotspots:[
             {
-                x:65,
-                y:35,
-                width:40,
-                height:60,
+                x:32.5,
+                y:33,
+                width:50,
+                height:50,
 
                 action:"scene",
                 target:"pito"
