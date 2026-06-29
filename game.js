@@ -58,7 +58,7 @@ const scenes = {
 
                 action:"scene",
 
-                target:"pito"
+                target:"jardin"
 
             },
 
@@ -124,14 +124,13 @@ const scenes = {
 
     },
 
-    fin:{
+    jardin:{
 
-        image:"images/fin.jpg",
+        image:"jardin.jpg",
 
         dialogue:[
 
-            "Bravo !",
-            "Tu as terminé cette petite démo."
+            "Nika : faut que je prennes la voiture de l'autre bouffon pour aller chez Pito !"
 
         ],
 
