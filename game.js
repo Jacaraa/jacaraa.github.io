@@ -225,6 +225,12 @@ const hotspotContainer = document.getElementById("hotspots");
 
 loadScene("chambre");
 
+document.getElementById("arrow").onclick = () => {
+
+    loadScene("couloir");
+
+};
+
 dialogue.onclick = () => {
 
     dialogueIndex++;
