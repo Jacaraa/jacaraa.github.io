@@ -25,6 +25,29 @@ body{
 
 }
 
+#arrow{
+    position:absolute;
+
+    bottom:40px;
+    right:40px;
+
+    width:70px;
+
+    cursor:pointer;
+
+    z-index:100;
+
+    animation: bounce 1s infinite;
+}
+
+@keyframes bounce{
+
+    0%{transform:translateY(0);}
+    50%{transform:translateY(-10px);}
+    100%{transform:translateY(0);}
+
+}
+
 /* boite de dialogue */
 
 #dialogue{
